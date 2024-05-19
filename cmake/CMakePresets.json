@@ -1,0 +1,23 @@
+{
+    "version": 6,
+    "configurePresets": [
+        {
+            "name": "default",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "PYTHON_LIBRARY": "/home/netlab/mambaforge/envs/pybind11-local/lib/libpython3.9.so",
+                "PYTHON_INCLUDE_DIR": "/home/netlab/mambaforge/envs/pybind11-local/include/python3.9",
+                "PYTHON_EXECUTABLE": "/home/netlab/mambaforge/envs/pybind11-local/bin/python3.9"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "default",
+            "configurePreset": "default",
+            "jobs": 48,
+            "inheritConfigureEnvironment": true
+        }
+    ]
+    
+}

@@ -6,3 +6,4 @@ set(CMAKE_CXX_STANDARD 14)
 
 find_package(pybind11 REQUIRED CONFIG)
 pybind11_add_module(mymodule code_and_wrapper.cpp)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -Wall -g")

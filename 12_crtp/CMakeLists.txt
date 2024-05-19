@@ -11,3 +11,4 @@ pybind11_add_module(mymodule main.cpp)
 target_link_libraries(mymodule PUBLIC pybind11::module xtensor-python Python::NumPy)
 
 target_compile_definitions(mymodule PRIVATE VERSION_INFO=0.1.0)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -Wall -g")
